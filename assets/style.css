@@ -1,0 +1,66 @@
+body{
+    background-color: #0f0f09;
+    color: aquamarine;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#showmore{
+    display: none;
+}
+.box{
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    padding: 10px 20px;
+    line-height: 30px;
+    background-color: #14140f;
+    justify-content: center;
+}
+.box button{
+    background-color: cadetblue;
+    border: none;
+    margin: 20px 20px;
+    padding: 10px 10px;
+    border-radius: 20px;
+    color: aquamarine;
+    font-weight: 600;
+}
+.avatar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    margin: 20px 0;
+}
+.avatar img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.show_more{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: start;
+}
+.adresse,.company{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width:375px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
